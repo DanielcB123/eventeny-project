@@ -19,3 +19,4 @@ AddDefaultCharset UTF-8
     php_value post_max_size 10M
 </IfModule>
 
+
