@@ -1,0 +1,17 @@
+{
+    "name": "your-app/php-app",
+    "description": "A vanilla PHP application",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
+

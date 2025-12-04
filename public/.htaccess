@@ -1,0 +1,16 @@
+# Public directory configuration
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect all requests to index.php (for routing)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Security: Prevent access to sensitive files
+<FilesMatch "\.(env|log|ini)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+

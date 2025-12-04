@@ -1,0 +1,21 @@
+# Apache configuration for PHP app
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect all requests to public directory
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# PHP settings (if allowed)
+<IfModule mod_php7.c>
+    php_value upload_max_filesize 10M
+    php_value post_max_size 10M
+</IfModule>
+
