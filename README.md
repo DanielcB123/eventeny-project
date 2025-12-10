@@ -18,27 +18,6 @@ A dynamic ticketing platform built with vanilla PHP, HTML, CSS, and JavaScript/j
 - Proceed to checkout review
 - Complete checkout (payment processing skipped)
 
-## Project Structure
-
-```
-/
-├── config/           # Configuration files
-│   ├── app.php       # Application config
-│   └── database.php  # Database config
-├── database/         # Database files
-│   └── schema.sql    # Database schema
-├── public/           # Public web directory
-│   ├── api/          # API endpoints
-│   ├── css/          # Stylesheets
-│   ├── js/           # JavaScript files
-│   ├── uploads/      # Uploaded images
-│   └── index.php     # Main entry point
-└── src/              # Application source code
-    ├── Controllers/  # API controllers
-    ├── Database/     # Database classes
-    └── Models/       # Data models
-```
-
 ## Setup Instructions
 
 ### 1. Database Setup
@@ -132,10 +111,4 @@ Open your browser and navigate to:
 ✅ No page reloads (AJAX-based)
 ✅ Responsive design
 ✅ Image upload support (frontend ready)
-
-## Notes
-
-- Cart is stored in browser localStorage
-- Payment processing is skipped as per requirements
-- All operations use AJAX for seamless user experience
 
