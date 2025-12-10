@@ -1,5 +1,7 @@
 # Eventeny Project
 
+- Video Link: https://drive.google.com/file/d/1VqH_B9nw8YojcujyB2Y-r9yWYHI1ivzP/view?usp=sharing
+
 A dynamic ticketing platform built with vanilla PHP, HTML, CSS, and JavaScript/jQuery.
 
 ## Features
